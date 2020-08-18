@@ -11,12 +11,12 @@ class Pics extends Component {
     const imageArray = [Meme1, Meme2, Meme3, Meme4, Meme5]
     let randomNum = Math.floor(Math.random() * imageArray.length)
     let imageMapper = imageArray.map((image) => {
-        return <img src={image} width="25%" height="25%" alt="something"/>
+        return <img src={image} width="250" height="250" alt="something"/>
     })
     console.log(imageMapper[randomNum])
   return (
     <div className="App">
-     <h1>Componet connected</h1>
+     {imageMapper[randomNum]}
     </div>
   );
 }
