@@ -9,6 +9,8 @@ import Meme5 from './Pics/ts.jpg'
 class Pics extends Component {
     render(){ 
     const imageArray = [Meme1, Meme2, Meme3, Meme4, Meme5]
+    let randomNum = Math.floor(Math.random() * imageArray.length)
+    console.log(randomNum)
   return (
     <div className="App">
      <h1>Componet connected</h1>
