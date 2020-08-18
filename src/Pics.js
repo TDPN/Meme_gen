@@ -10,7 +10,10 @@ class Pics extends Component {
     render(){ 
     const imageArray = [Meme1, Meme2, Meme3, Meme4, Meme5]
     let randomNum = Math.floor(Math.random() * imageArray.length)
-    console.log(randomNum)
+    let imageMapper = imageArray.map((image) => {
+        return <img src={image} width="25%" height="25%" alt="something"/>
+    })
+    console.log(imageMapper[randomNum])
   return (
     <div className="App">
      <h1>Componet connected</h1>
