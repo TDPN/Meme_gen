@@ -7,8 +7,6 @@ class App extends Component {
     window.location.reload()
   }
 
-
-
   render() {
   return (
     <div className="App">
